@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+nav {
+  background-color: #e6e6e6;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+}
+
+/** Navigation Bar Styles **/
+
+.nav__container {
+  max-width: 1400px;
+  flex-grow: 1;
+  display: flex;
+  height: 100%;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 45px;
+  width: 287px;
+}
+
+.nav__nav-link {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav__icon--user {
+  display: inline;
+  height: 32px;
+  margin: 0 10px;
+}
+
+.nav_nav-link--text {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #b8222e;
+}
+
+/** Main Content Styles **/
+
+.container {
+  max-width: 1400px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.main-content__title {
+  width: 45%;
+}
+
+.main-content__title h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #b8222e;
+  padding: 75px 0;
+}
