@@ -5,6 +5,7 @@
 :root {
   --pivotal-grey: #e6e6e6;
   --pivotal-red: #b8222e;
+  --page-width: 1200px;
 }
 
 * {
@@ -17,20 +18,18 @@ body {
 }
 nav {
   background-color: var(--pivotal-grey);
+  /* width: clamp(20px, (100vw-1200px) * 100000px, 100vw); */
+  width: clamp(1200px, calc(100vw - 1200px) * 10000, 100vw);
   height: 175px;
-  display: flex;
-  justify-content: center;
 }
 
 /** Navigation Bar Styles **/
 
-nav {
-  width: 1200px;
-}
-
 .nav__container {
-  flex-grow: 1;
+  width: var(--page-width);
   display: flex;
+  justify-content: center;
+  margin: auto;
   height: 100%;
   padding: 0 20px;
   align-items: center;
@@ -63,8 +62,9 @@ nav {
 /** Main Content Styles **/
 
 .container {
-  width: 1200px;
+  width: var(--page-width);
   margin: auto;
+  padding: 0 20px;
 }
 
 .title__container {
