@@ -24,8 +24,11 @@ nav {
 
 /** Navigation Bar Styles **/
 
+nav {
+  width: 1200px;
+}
+
 .nav__container {
-  max-width: 1400px;
   flex-grow: 1;
   display: flex;
   height: 100%;
@@ -60,7 +63,7 @@ nav {
 /** Main Content Styles **/
 
 .container {
-  max-width: 1400px;
+  width: 1200px;
   margin: auto;
 }
 
@@ -84,6 +87,7 @@ nav {
   display: flex;
   margin-bottom: 20px;
   border-radius: 15px;
+  min-width: 1000px;
 }
 
 .card__content-container {
